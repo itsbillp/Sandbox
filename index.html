@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Time Sheet</title>
     <link rel="stylesheet" href="style.css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
@@ -57,18 +58,6 @@
                         </div>
                 </div>
         <div class="form-group">
-          <form>
-            Emplyoee Name <br>
-            <input id="name" type="text"><br>
-            Role<br>
-            <input id="role" type="text"><br>
-            Start Date(MM/DD/YYYY)<br>
-            <input id="startDate" type="text"><br>
-            Monthly Rate<br>
-            <input id="monthlyRate" type="text"><br>
-            <input id="submitButton" type="submit">
-          </form>
-
           <hr>
           <!-- Bootstrap Formatted Form -->
           <form>
@@ -86,9 +75,9 @@
                 </div>
                 <div class="form-group">
                     <label for="employeeName">Monthly Rate</label>
-                    <input type="text" class="form-control" id="monthlyRate" placeholder="01/08/1989">
+                    <input type="text" class="form-control" id="monthlyRate" placeholder="200000">
                 </div>    
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
               </form>
         </div>
     </div>

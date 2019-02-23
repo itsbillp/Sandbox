@@ -45,10 +45,10 @@ function createRow(name, role, startDate, monthlyRate) {
 
 
 
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
 // Create a variable to reference the database.
-var database = firebase.database();
+// var database = firebase.database();
 
 // Initial Values
 var name = "";
@@ -67,12 +67,12 @@ $("#submitButton").on("click", function (event) {
     monthlyRate = $("#montly-rate").val().trim();
 
     // Code for "Setting values in the database"
-    database.ref().push({
-        name: name,
-        role: role,
-        startDate: startDate,
-        monthlyRate: monthlyRate
-    });
+    // database.ref().push({
+    //     name: name,
+    //     role: role,
+    //     startDate: startDate,
+    //     monthlyRate: monthlyRate
+    // });
 })
 
 
