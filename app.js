@@ -2,15 +2,16 @@
 $(document).ready( function() {
     $("#submitButton").on("click", function () {
         event.preventDefault();
-        var name = $("#name").val().trim()
-        var role = $("#role").val().trim()
-        var startDate = $("#startDate").val().trim()
-        var monthlyRate = $("#monthlyRate").val().trim()
+        var name = $("#employeeName").val().trim();
+        var role = $("#role").val().trim();
+        var startDate = $("#startDate").val().trim();
+        var monthlyRate = $("#monthlyRate").val().trim();
         createRow(name, role, startDate, monthlyRate);
     })
 });
 
 function createRow(name, role, startDate, monthlyRate) {
+    console.log(name + role + startDate + monthlyRate );
     var row = $("<tr>", {
         class: "user"
     })
