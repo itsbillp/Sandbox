@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Sheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+</head>
+<body>
+
+    <!-- Jumbotron -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="jumbotron jumbotron-fluid">
+                <h1>Employee Data Management</h1>      
+                <p>A comprehensive Directory of Employee Billable Hours</p>
+            </div>
+        </div>
+
+        
+
+    <!-- Current Employee Panel -->
+                <div class="card">
+                    <div class="card-header"><h3>
+                        Current Employees
+                    </h3></div>
+                        <!-- Table  -->
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Employee  Name</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">Months Worked</th>
+                                        <th scope="col">MMonthly Rate ($)</th>
+                                        <th scope="col">Total Billed ($)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="name">1</th>
+                                        <td id="role">Mark</td>
+                                        <td id="startDate">Date</td>
+                                        <td id="monthsWorked">@mdo</td>
+                                        <td id="monthlyRate">Mark</td>
+                                        <td id="totalBilled">Otto</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+        <div class="form-group">
+          <form>
+            Emplyoee Name <br>
+            <input id="name" type="text"><br>
+            Role<br>
+            <input id="role" type="text"><br>
+            Start Date(MM/DD/YYYY)<br>
+            <input id="startDate" type="text"><br>
+            Monthly Rate<br>
+            <input id="monthlyRate" type="text"><br>
+            <input id="submitButton" type="submit">
+          </form>
+
+          <hr>
+          <!-- Bootstrap Formatted Form -->
+          <form>
+                <div class="form-group">
+                  <label for="employeeName">Employee Name</label>
+                  <input type="text" class="form-control" id="employeeName" placeholder="Jane Doe">
+                </div>
+                <div class="form-group"></div>
+                    <label for="role">Role</label>
+                    <input type="text" class="form-control" id="role" placeholder="CEO">
+                </div>
+                <div class="form-group">
+                    <label for="employeeName">Start Date (MM/DD/YYYY)</label>
+                    <input type="text" class="form-control" id="startDate" placeholder="01/08/1989">
+                </div>
+                <div class="form-group">
+                    <label for="employeeName">Monthly Rate</label>
+                    <input type="text" class="form-control" id="monthlyRate" placeholder="01/08/1989">
+                </div>    
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
